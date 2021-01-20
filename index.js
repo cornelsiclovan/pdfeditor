@@ -1,7 +1,48 @@
 const { degrees, PDFDocument, rgb, StandardFonts } = require('pdf-lib');
 const fs = require('fs');
+const util = require('util');
+const path = require('path');
 
-fs.readFile('cerere_inregistrare.pdf',async (error, data) => {
+const readDir = util.promisify(fs.readdir);
+const readFile = util.promisify(fs.readFile);
+
+const readFolder = './MODELE_DOCUMENTE/';
+const writeFolder = './MODELE_COMPLETATE/';
+
+let files = [];
+
+const getFiles = () => {
+    return readDir(readFolder, files);
+};
+
+getAllFiles = async () => {
+    await getFiles().then(data => {
+        data.forEach(file => {
+          files.push(file);
+        });
+    });
+
+
+    files.forEach(file => {
+        file = path.join(readFolder, file);
+        fs.readFile(file, (error, data) => {
+            console.log(data);
+        });
+        
+    });
+}
+
+
+
+getAllFiles();
+
+
+
+
+
+
+
+readFile('declaratie_model1.pdf',async (error, data) => {
     console.log(data); 
     const pdfDoc =await PDFDocument.load(data);
     
@@ -27,7 +68,7 @@ fs.readFile('cerere_inregistrare.pdf',async (error, data) => {
     fields.forEach(field => {
         const type = field.constructor.name;
         const name = field.getName();
-        console.log(`${type}: ${name}`);
+        //console.log(`${type}: ${name}`);
         if(type === 'PDFTextField')
             form.getTextField(name).setText(formData[name]);
         
@@ -301,7 +342,7 @@ fs.readFile('cerere_inregistrare.pdf',async (error, data) => {
     
     const pdfBytes = await pdfDoc.save();
     
-    console.log(pdfBytes);
+    //console.log(pdfBytes);
     
     fs.writeFile("test.pdf", pdfBytes, () => {
         console.log("done");
