@@ -89,12 +89,9 @@ getAllFiles = async () => {
 
            const pdfBytes = await pdfDoc.save();
     
-
-
            fs.writeFile( pathWrite, pdfBytes, () => {
                console.log("done"); 
-           });
-           
+           });       
 
         });
         

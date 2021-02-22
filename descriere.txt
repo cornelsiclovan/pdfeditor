@@ -47,43 +47,6 @@ PDFTextField: declar.2
 PDFTextField: declar.3
 PDFTextField: data
 
-specimen_de_semnaturi.pdf
-------------------------------------
-PDFTextField: form1
-PDFTextField: form2
-PDFTextField: form3
-PDFTextField: form4
-PDFTextField: form5
-PDFTextField: form6
-PDFTextField: form7
-PDFTextField: form9
-PDFTextField: form10
-PDFTextField: form8
-PDFTextField: form11
-PDFTextField: form12
-PDFTextField: form13
-PDFTextField: form14
-PDFTextField: form15
-PDFTextField: form16
-PDFTextField: form17
-PDFTextField: form18
-PDFTextField: J1
-PDFTextField: J2
-PDFTextField: J3
-PDFTextField: J4
-PDFTextField: J5
-PDFTextField: J6
-PDFTextField: J7
-PDFTextField: J8
-PDFTextField: J9
-PDFTextField: J10
-PDFTextField: J11
-PDFTextField: J12
-PDFTextField: form19
-PDFTextField: form20
-PDFTextField: form21
-PDFTextField: form22
-
 11-10-167-2 DECLARATIE MODEL 2.pdf
 ------------------------------------
 PDFTextField: catre.0
@@ -560,6 +523,43 @@ PDFTextField: clasa_caen_out_desc.0.12
 PDFTextField: clasa_caen_out_desc.0.13
 PDFTextField: clasa_caen_out_desc.0.14
 PDFTextField: data1
+
+specimen_de_semnaturi.pdf
+------------------------------------
+PDFTextField: form1
+PDFTextField: form2
+PDFTextField: form3
+PDFTextField: form4
+PDFTextField: form5
+PDFTextField: form6
+PDFTextField: form7
+PDFTextField: form9
+PDFTextField: form10
+PDFTextField: form8
+PDFTextField: form11
+PDFTextField: form12
+PDFTextField: form13
+PDFTextField: form14
+PDFTextField: form15
+PDFTextField: form16
+PDFTextField: form17
+PDFTextField: form18
+PDFTextField: J1
+PDFTextField: J2
+PDFTextField: J3
+PDFTextField: J4
+PDFTextField: J5
+PDFTextField: J6
+PDFTextField: J7
+PDFTextField: J8
+PDFTextField: J9
+PDFTextField: J10
+PDFTextField: J11
+PDFTextField: J12
+PDFTextField: form19
+PDFTextField: form20
+PDFTextField: form21
+PDFTextField: form22
 
 11-10-181 - REZERVARE DENUMIRE.pdf
 ------------------------------------
